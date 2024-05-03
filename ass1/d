@@ -1,1 +1,26 @@
 ass1
+
+  Steps for execution:
+1. Compile the Java files:
+cd path\to\your\project
+javac ArithmeticService.java ArithmeticServiceImpl.java ArithmeticClient.java
+
+
+2. Start the RMI registry in a new terminal:
+start rmiregistry
+
+ 3.Start the RMI server in another terminal:
+java ArithmeticServiceImpl  
+
+ 4. Start the RMI client in a third terminal:
+java ArithmeticClient
+
+
+The output should be:
+Adding: 10 + 5 = 15
+Subtracting: 10 - 5 = 5
+Multiplying: 10 * 5 = 50
+Dividing: 10 / 5 = 2.0
+
+
+
